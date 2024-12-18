@@ -14,6 +14,12 @@ const routes: Routes = [
     loadChildren:()=> import('./core/dashboard/dashboard.module').then(m=> m.DashboardModule),
   },
   {
+    path:'board',
+    //guards
+    loadChildren:()=> import('./features/board/board.module').then(m=> m.BoardModule),
+  },
+
+  {
     path: '**',
     redirectTo: 'auth'
   }
