@@ -17,7 +17,8 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule,
+
   ],
   exports:[
     SideBarComponent,
